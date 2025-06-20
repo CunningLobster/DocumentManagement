@@ -1,0 +1,18 @@
+meta {
+  name: CreateAsync
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{api_url}}/manualApprove
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "PersonDocumentId": 2,
+    "EmployeeId": 2
+  }
+}

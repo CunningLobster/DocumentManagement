@@ -1,0 +1,15 @@
+meta {
+  name: GetListAsync
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{api_url}}/personDocuments/list?OrgHealthCareId=45704
+  body: none
+  auth: inherit
+}
+
+params:query {
+  OrgHealthCareId: 45704
+}

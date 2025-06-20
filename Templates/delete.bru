@@ -1,0 +1,23 @@
+meta {
+  name: delete
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{api_url}}/templates?Id=1&OrgHealthCareId=23
+  body: json
+  auth: inherit
+}
+
+params:query {
+  Id: 1
+  OrgHealthCareId: 23
+}
+
+body:json {
+  {
+    "Id": 5,
+    "OrgHealthCareId": 2
+  }
+}

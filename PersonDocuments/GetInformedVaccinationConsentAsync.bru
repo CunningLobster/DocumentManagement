@@ -1,0 +1,20 @@
+meta {
+  name: GetInformedVaccinationConsentAsync
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{api_url}}/personDocuments/informedVaccinationConsent?PersonId=1&OrgHealthCareId=2&PatientFullName=dbsdbsdb&VaccineName=sdvbsdbsd&Language=1&ValidTo=2025-07-16
+  body: none
+  auth: inherit
+}
+
+params:query {
+  PersonId: 1
+  OrgHealthCareId: 2
+  PatientFullName: dbsdbsdb
+  VaccineName: sdvbsdbsd
+  Language: 1
+  ValidTo: 2025-07-16
+}

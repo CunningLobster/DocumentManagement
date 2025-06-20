@@ -1,0 +1,20 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{api_url}}/templates
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "PersonDocumentTypeId": 1,
+    "Content": "<!DOCTYPE html>\r\n  <html lang=\"ru\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <title>Информированное согласие пациента на оказание медицинской помощи, включающее в себя согласие на сбор, обработку, хранение персональных медицинских данных и доступ к ним</title>\r\n  \r\n    <style type=\"text/css\">\r\n      .title-item {\r\n        text-align: center;\r\n      }\r\n  \r\n      .title {\r\n        font-weight: 700;\r\n      }\r\n  \r\n      .common-indent-justify {\r\n        text-indent: 36pt;\r\n        text-align: justify;\r\n      }\r\n  \r\n      .pt-20 {\r\n        padding-top: 20pt;\r\n      }\r\n    </style>\r\n  \r\n  </head>\r\n  \r\n  <body>\r\n    <div class=\"title-item\">\r\n      <span class=\"title\">\r\n        Информированное согласие пациента на оказание медицинской помощи, включающее в себя согласие на сбор, обработку, хранение персональных медицинских данных и доступ к ним\r\n      </span>\r\n    </div>\r\n    <div class=\"fullname-item common-indent-justify pt-20\">\r\n      <span>Принимая настоящее согласие, я <span class=\"template-variable\">{{ PersonFullName }}</span> <span class=\"template-variable\">{{ PersonIdentityCode }}</span> добровольно соглашаюсь на оказание мне медицинской помощи и соглашаюсь со следующими пунктами:</span>\r\n    </div>\r\n    <div class=\"first-item common-indent-justify pt-20\">\r\n      <span>1) Мне разъяснены возможные последствия оказания медицинской помощи и отказа от нее. Я информирован(а) о правах и обязанностях пациента, при оказании мне медицинской помощи.</span>\r\n    </div>\r\n    <div class=\"second-item common-indent-justify\">\r\n      <span>2) Мною представлена вся необходимая информация о состоянии своего здоровья, предыдущих эпизодах лечения, сопутствующих заболеваниях, перенесенных операциях, травмах, аллергических реакциях и других сведениях, необходимых для выбора правильной тактики лечения.</span>\r\n    </div>\r\n    <div class=\"third-item common-indent-justify\">\r\n      <span>3) Я, как владелец персональных медицинских данных (далее - ПМД), согласно п.1 статьи 60 Кодекса о здоровье и системе здравоохранения (далее - Кодекс),  даю согласие на сбор, обработку и хранение своих ПМД медицинской организации <span class=\"template-variable\">{{ OrgHealthCareName }}</span> в лице медицинского работника <span class=\"template-variable\">{{ DoctorFullName }}</span><span class=\"template-variable\">{{ PatientFullName }}</span>\r\n    </div> \r\n  </body>\r\n  </html>",
+    "OrgHealthCareId": 2,
+    "Language": 1
+  }
+}

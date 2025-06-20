@@ -1,0 +1,27 @@
+meta {
+  name: GatewaySIgnIn
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://gwe.dmed.kz/api/SystemAccess/SignIn
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "clientID": "Patient",
+      "clientSecret": "565093W"
+  }
+}
+
+body:multipart-form {
+  clientID: dmed_system
+  clientSecret: Ss123456789@
+}
+
+vars:post-response {
+  gateway_access_token: res.body
+}

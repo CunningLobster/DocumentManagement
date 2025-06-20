@@ -1,0 +1,24 @@
+meta {
+  name: GetPatientInvasiveInterventionConsentAsync
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{api_url}}/personDocuments/patientInvasiveInterventionConsent?PersonId=1&OrgHealthCareId=1&OrgHealthCareName=dfbdfbdfb&PatientFullName=dfbdfb&PatientBirthDate=1980/05/05&ProcedureName=sdvbedv&DateCompleted=2025/06/30&DoctorFullName=dfbdfb&Language=1&ValidTo=2025-07-16
+  body: none
+  auth: inherit
+}
+
+params:query {
+  PersonId: 1
+  OrgHealthCareId: 1
+  OrgHealthCareName: dfbdfbdfb
+  PatientFullName: dfbdfb
+  PatientBirthDate: 1980/05/05
+  ProcedureName: sdvbedv
+  DateCompleted: 2025/06/30
+  DoctorFullName: dfbdfb
+  Language: 1
+  ValidTo: 2025-07-16
+}

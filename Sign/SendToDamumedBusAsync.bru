@@ -1,0 +1,18 @@
+meta {
+  name: SendToDamumedBusAsync
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{api_url}}/sign/damumedBus/send
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "PersonDocumentId": 10006,
+    "Subject": "691210450257"
+  }
+}

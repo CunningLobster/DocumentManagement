@@ -1,0 +1,17 @@
+meta {
+  name: content
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{api_url}}/templates/content?PersonDocumentTypeId=1&OrgHealthCareId=2&Language=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  PersonDocumentTypeId: 1
+  OrgHealthCareId: 2
+  Language: 1
+}

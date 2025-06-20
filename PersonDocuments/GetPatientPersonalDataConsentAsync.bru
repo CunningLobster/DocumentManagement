@@ -1,0 +1,23 @@
+meta {
+  name: GetPatientPersonalDataConsentAsync
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{api_url}}/personDocuments/patientPersonalDataConsent?PersonId=1&OrgHealthCareId=2&OrgHealthCareIdentityCode=999666333222&OrgHealthCareName=Клиника 1&PatientFullName=Иванов Иван Иванович&ValidTo=2025/07/16&Language=2&DoctorFullName=Пилюлькин Доктор Докторович
+  body: none
+  auth: inherit
+}
+
+params:query {
+  PersonId: 1
+  OrgHealthCareId: 2
+  OrgHealthCareIdentityCode: 999666333222
+  OrgHealthCareName: Клиника 1
+  PatientFullName: Иванов Иван Иванович
+  ValidTo: 2025/07/16
+  Language: 2
+  DoctorFullName: Пилюлькин Доктор Докторович
+  ~LegalRepFullName: Петрова Мария Сергеевна
+}

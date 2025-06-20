@@ -1,0 +1,15 @@
+meta {
+  name: GetList
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{api_url}}/personDocumentTypes/list
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~NameSearch: 
+}

@@ -1,0 +1,24 @@
+meta {
+  name: GetPatientConsentMedicalCareAndDataProcessingAsync
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{api_url}}/personDocuments/patientConsentMedicalCareAndDataProcessing?PersonId=18115304&OrgHealthCareId=1705&PatientFullName=Иванов Иван Иванович&OrgHealthCareName=КГП на ПХВ "Городская поликлиника №1" КГУ "УЗ акимата СКО"&PatientIdentityCode=870504450984&Language=2&DoctorFullName=ЦАРЁВА ЕКАТЕРИНА ВЛАДИМИРОВНА&ValidTo=2025-07-16
+  body: none
+  auth: inherit
+}
+
+params:query {
+  PersonId: 18115304
+  OrgHealthCareId: 1705
+  PatientFullName: Иванов Иван Иванович
+  OrgHealthCareName: КГП на ПХВ "Городская поликлиника №1" КГУ "УЗ акимата СКО"
+  PatientIdentityCode: 870504450984
+  Language: 2
+  DoctorFullName: ЦАРЁВА ЕКАТЕРИНА ВЛАДИМИРОВНА
+  ValidTo: 2025-07-16
+  ~LegalRepFullName: Представительный представитель
+  ~LegalRepIdentityCode: 222233334444
+}

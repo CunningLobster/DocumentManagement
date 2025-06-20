@@ -1,0 +1,12 @@
+auth {
+  mode: bearer
+}
+
+auth:bearer {
+  token: {{gateway_access_token}}
+}
+
+vars:pre-request {
+  gateway_api_url: https://gateway-dev.dmed.kz/api
+  api_url: http://localhost:5269/api
+}

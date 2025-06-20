@@ -1,0 +1,15 @@
+meta {
+  name: GetAgreementIdentifiersAsync
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{api_url}}/agreements/agreementIdentifiers?PersonDocumentId=10011
+  body: none
+  auth: inherit
+}
+
+params:query {
+  PersonDocumentId: 10011
+}

@@ -1,0 +1,20 @@
+meta {
+  name: GetPatientInformedConsentMedicalCareAsync
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{api_url}}/personDocuments/patientInformedConsentMedicalCare?PatientIdentityCode=870123351350&Language=2&OrgHealthCareId=1705&PersonId=2566603&PatientFullName=KOZHA ДИЛЬМУХАМЕД БАЛТАГЕСКЕНОВИЧ&ValidTo=2025-07-16
+  body: none
+  auth: inherit
+}
+
+params:query {
+  PatientIdentityCode: 870123351350
+  Language: 2
+  OrgHealthCareId: 1705
+  PersonId: 2566603
+  PatientFullName: KOZHA ДИЛЬМУХАМЕД БАЛТАГЕСКЕНОВИЧ
+  ValidTo: 2025-07-16
+}
